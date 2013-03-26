@@ -22,7 +22,11 @@
                     <div id="user" class="&site-tool-group;"></div>
                     
                     <div id="page" class="&site-tool-group;"></div>
-                    
+
+                    <form class="navbar-search pull-right" action="./index.php">
+                        <input name="search" type="text" class="search-query" placeholder="Search Something"/>
+                    </form>
+
                     <div class="&nav-collapse-class;">
                         <xsl:apply-templates select="ul[1]" mode="topLevel">
                             <xsl:with-param name="class">&navbar-nav;</xsl:with-param>
