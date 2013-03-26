@@ -8,7 +8,7 @@
     
     <!-- add nav class to root ul element -->
     <xsl:template match="/">
-        <nav class="navbar">
+        <nav class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="&collapse-data-toggle;" data-target=".&nav-collapse-class;">
