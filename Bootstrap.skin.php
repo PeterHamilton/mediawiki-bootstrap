@@ -20,9 +20,10 @@
 		*/
 		public function initPage( OutputPage $out ) {
 			parent::initPage( $out );
-			$out->addModuleScripts( 'skins.bootstrap' );
 			$out->addMeta("viewport", "width=device-width, initial-scale=1.0");
-			$out->addScriptFile( "http://html5shiv.googlecode.com/svn/trunk/html5.js" );
+			$out->addModuleScripts( 'skins.bootstrap' );
+			$out->addScriptFile("http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js");
+			$out->addScriptFile("http://html5shiv.googlecode.com/svn/trunk/html5.js" );
 		}
 
 		/**
