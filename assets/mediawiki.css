@@ -134,6 +134,11 @@ body {
   border-bottom-color: #777;
 }
 
+.editsection {
+    font-size: 18px;
+    font-weight: normal;
+}
+
 @media (max-width: 979px) {
 
     body {
