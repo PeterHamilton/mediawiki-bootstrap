@@ -72,7 +72,7 @@
 		// add footer links 
 		foreach( $this->skin->getFooterLinks() as $category => $links ) {	
 			$footerLinks = $output->createElement('ul');
-			$footerLinks->setAttribute('class', 'horizontal');
+			$footerLinks->setAttribute('class', 'horizontal page-footer');
 			foreach( $links as $link ) {
 				$footerLink = $output->createDocumentFragment();
 				$footerLink->appendXML(
@@ -83,13 +83,12 @@
 				$footerLinks->appendChild( $footerLink );	
 			}
 		}
-		$output->appendChild( $footerLinks );
 
 		// add footer icons
 		foreach( $this->skin->getFooterIcons("icononly") 
 			as $blockName => $icons ) {
 			$footerIcons = $output->createElement('ul');
-			$footerIcons->setAttribute('class', 'horizontal pull-right');
+			$footerIcons->setAttribute('class', 'pull-right');
 			foreach( $icons as $icon ) {
 				$footerIcon = $output->createDocumentFragment();
 				$footerIcon->appendXML(
@@ -100,7 +99,10 @@
 				$footerIcons->appendChild( $footerIcon );
 			}
 		}	
-		$output->appendChild( $footerIcons );
+
+		$footerLinks->appendChild( $footerIcons );
+
+		$output->appendChild( $footerLinks );
 
 		// output as HTML
 		if( $output ) echo $output->saveHTML();
