@@ -19,9 +19,9 @@
                     
                     <a class="brand"></a>
                     
-                    <div id="page" class="&site-tool-group;"></div>
-                    
                     <div id="user" class="&site-tool-group;"></div>
+                    
+                    <div id="page" class="&site-tool-group;"></div>
                     
                     <div class="&nav-collapse-class;">
                         <xsl:apply-templates select="ul[1]" mode="topLevel">
