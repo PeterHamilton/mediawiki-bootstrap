@@ -171,7 +171,7 @@
 				$userTxt = new DOMText( $userLink['text'] . ' ' );
 				$userBtn = $output->createElement('a');	
 				$userBtn->setAttribute('href', $userLink['href']);
-				$userBtn->setAttribute('class', 'btn btn-warning');
+				$userBtn->setAttribute('class', 'btn');
 				$userBtn->appendChild( $userTxt );
 
 				$userIcon = $output->createElement('icon');
@@ -182,7 +182,7 @@
 			
 				// create user dropdown	
 				$userCaret = $dropdownBtn->cloneNode( true );
-				$userCaret->setAttribute('class', $dropdownBtn->getAttribute('class') . ' btn-warning');
+				$userCaret->setAttribute('class', $dropdownBtn->getAttribute('class'));
 
 				// create the dropdown links
 				$userDropdown = $this->renderDataLinks( $userLinks, 'dropdown-menu' );

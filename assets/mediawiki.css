@@ -119,6 +119,12 @@ body {
     right: 13px;
 }
 
+.nav .dropdown-toggle .caret {
+  margin-top: 6px;
+  border-top-color: #777;
+  border-bottom-color: #777;
+}
+
 @media (max-width: 979px) {
 
     body {

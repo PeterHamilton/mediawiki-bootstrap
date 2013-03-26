@@ -19,13 +19,34 @@
                     
                     <a class="brand"></a>
                     
-                    <div id="user" class="&site-tool-group;"></div>
                     
-                    <div id="page" class="&site-tool-group;"></div>
 
-                    <form class="navbar-search pull-right" action="./index.php">
-                        <input name="search" type="text" class="search-query" placeholder="Search Something"/>
-                    </form>
+                    <ul class="nav pull-right">
+                        <li>
+                            <form class="navbar-search pull-right" action="./index.php" id="searchform">
+                                <div id="simpleSearch">
+                                    <input type="text"
+                                           name="search"
+                                           title="Search MediaWiki [ctrl-option-f]"
+                                           accesskey="f" 
+                                           id="searchInput" 
+                                           tabindex="1" 
+                                           autocomplete="off" 
+                                           class="search-query" 
+                                           placeholder="Search"/>
+                                    <input type="hidden" name="title" value="Special:Search"/>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li>
+                            <div id="page" class="&site-tool-group;"></div>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li>
+                            <div id="user" class="&site-tool-group;"></div>
+                        </li>
+                    </ul>
 
                     <div class="&nav-collapse-class;">
                         <xsl:apply-templates select="ul[1]" mode="topLevel">
