@@ -68,7 +68,7 @@
 	$sgNavbarOptions['dropdown'] = true; 
 
 	$sgSidebarOptions['page'] = 'MediaWiki:bootstrap-sidebar';
-	$sgSidebarOptions['type'] = 'pills'; # tabs, pills, list
-	$sgSidebarOptions['dropdown'] = true;
+	$sgSidebarOptions['type'] = 'list'; # tabs, pills, list
+	$sgSidebarOptions['dropdown'] = false;
 
 	$sgFooterOptions['page'] = 'MediaWiki:bootstrap-footer';

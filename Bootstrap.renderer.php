@@ -43,8 +43,7 @@
 
 			$finder = new DOMXPath( $doc );
 			$container = $finder->query('//div[contains(@class,"catlinks")]')->item(0);
-			$container->setAttribute( 'class', $container->getAttribute('class') . 
-				' well' );
+			$container->setAttribute( 'class', $container->getAttribute('class'));
 	
 			$result = $doc->saveHTML();
 			echo $result;
